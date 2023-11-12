@@ -71,13 +71,13 @@ public class EmployeePayrollDriver
                                         System.out.println("Enter Employee ID:");
                                         int idNumber = scan.nextInt();
                                         EmployeePayroll updater = new EmployeePayroll();
-                                        updater.Update(idNumber);
+                                        updater.Update(idNumber, scan);
                                         break;
                                     
                                     
                                     case 3:
                                         EmployeePayroll viewRecord = new EmployeePayroll();
-                                        viewRecord.view();
+                                        viewRecord.view(scan);
                                         break;
 
                                     case 4:
